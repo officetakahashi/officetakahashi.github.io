@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>料金のご案内 | 事業計画オフィスタカハシ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #ffffff;
+      --sidebar-bg: #f5f1ed;
+      --text: #222222;
+      --nav-text: #333333;
+      --nav-active: #222222;
+      --accent-line: #222222;
+      --sidebar-width: 160px;
+    }
+    body { font-family: 'Noto Sans JP', sans-serif; font-weight: 300; color: var(--text); background: var(--bg); min-height: 100vh; display: flex; }
+    .sidebar { width: var(--sidebar-width); min-height: 100vh; background: var(--sidebar-bg); position: fixed; top: 0; left: 0; display: flex; flex-direction: column; padding: 40px 0; }
+    .sidebar-logo { font-size: 11px; font-weight: 500; color: var(--nav-text); letter-spacing: 0.05em; line-height: 1.6; padding: 0 24px; margin-bottom: 56px; }
+    nav { display: flex; flex-direction: column; gap: 0; }
+    nav a { display: block; font-size: 13px; font-weight: 300; color: var(--nav-text); text-decoration: none; padding: 12px 24px; letter-spacing: 0.05em; line-height: 1.5; border-left: 2px solid transparent; transition: color 0.2s; }
+    nav a:hover { color: var(--nav-active); }
+    nav a.active { color: var(--nav-active); border-left: 2px solid var(--accent-line); font-weight: 400; }
+    .sidebar-footer { margin-top: auto; padding: 0 24px; display: flex; flex-direction: column; align-items: flex-end; }
+    .sidebar-footer .bpot-mark { font-size: 18px; font-weight: 500; letter-spacing: 0.12em; color: #555555; line-height: 1.2; }
+    .sidebar-footer .since { font-size: 9px; font-weight: 300; letter-spacing: 0.15em; color: #aaaaaa; margin-top: 2px; }
+    .main { margin-left: var(--sidebar-width); flex: 1; padding: 100px 80px 120px 80px; max-width: 760px; }
+    .page-title { font-size: 13px; font-weight: 400; color: #aaaaaa; letter-spacing: 0.1em; margin-bottom: 64px; }
+    .body-text { font-size: 17px; font-weight: 300; line-height: 2.4; color: var(--text); }
+    .body-text p { margin-bottom: 40px; }
+    .section { margin-bottom: 72px; }
+    .section-label { font-size: 11px; font-weight: 400; color: #aaaaaa; letter-spacing: 0.15em; margin-bottom: 24px; }
+    .pricing-table { border-top: 1px solid #e8e4e0; }
+    .pricing-row { display: flex; justify-content: space-between; align-items: baseline; padding: 20px 0; border-bottom: 1px solid #e8e4e0; }
+    .pricing-label { font-size: 16px; font-weight: 300; color: var(--text); }
+    .pricing-value { font-size: 16px; font-weight: 400; color: var(--text); letter-spacing: 0.03em; }
+    .pricing-note { margin-top: 16px; font-size: 13px; font-weight: 300; color: #888888; line-height: 2.0; }
+    .divider { border: none; border-top: 1px solid #e8e4e0; margin: 64px 0; }
+    .stance { margin-top: 80px; font-size: 17px; font-weight: 300; line-height: 2.6; color: var(--text); }
+    .closing { margin-top: 64px; font-size: 22px; font-weight: 500; line-height: 2.0; color: var(--text); }
+    @media (max-width: 768px) { .sidebar { display: none; } .main { margin-left: 0; padding: 60px 32px 80px 32px; } }
+  </style>
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="sidebar-logo">事業計画オフィスタカハシ</div>
+    <nav>
+      <a href="index.html">トップページ</a>
+      <a href="consulting.html">経営のご相談</a>
+      <a href="business-plan.html">事業計画書の作成</a>
+      <a href="payroll.html">給与計算</a>
+      <a href="pricing.html" class="active">料金のご案内</a>
+      <a href="contact.html">お問い合わせ</a>
+    </nav>
+    <div class="sidebar-footer">
+      <span class="bpot-mark">BPOT</span>
+      <span class="since">since 2005</span>
+    </div>
+  </aside>
+  <main class="main">
+    <div class="page-title">料金のご案内</div>
+
+    <div class="stance">
+      <p>契約を急ぐことはしません。<br>
+      まず1時間、話を聞かせてください。<br>
+      直接お会いしても、電話でも、Zoomでも構いません。</p>
+      <p>その時間は無料です。</p>
+      <p>お互いに納得できたと思えたとき、はじめて契約の話をします。<br>
+      私からお断りすることもあります。<br>
+      お役に立てる自信が持てないときは、正直にそう伝えます。</p>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <div class="section-label">経営のご相談（月次契約）</div>
+      <div class="pricing-table">
+        <div class="pricing-row">
+          <span class="pricing-label">月額</span>
+          <span class="pricing-value">38,000円</span>
+        </div>
+      </div>
+      <p class="pricing-note">税抜</p>
+    </div>
+
+    <div class="section">
+      <div class="section-label">事業計画書の作成（スポット）</div>
+      <div class="pricing-table">
+        <div class="pricing-row">
+          <span class="pricing-label">1件</span>
+          <span class="pricing-value">180,000円</span>
+        </div>
+      </div>
+      <p class="pricing-note">税抜</p>
+    </div>
+
+    <div class="section">
+      <div class="section-label">給与計算（月額）</div>
+      <div class="pricing-table">
+        <div class="pricing-row">
+          <span class="pricing-label">1名〜10名</span>
+          <span class="pricing-value">1人あたり 1,200円</span>
+        </div>
+        <div class="pricing-row">
+          <span class="pricing-label">11名〜30名</span>
+          <span class="pricing-value">1人あたり 1,000円</span>
+        </div>
+        <div class="pricing-row">
+          <span class="pricing-label">31名〜50名</span>
+          <span class="pricing-value">1人あたり 800円</span>
+        </div>
+        <div class="pricing-row">
+          <span class="pricing-label">51名以上</span>
+          <span class="pricing-value">1人あたり 600円</span>
+        </div>
+      </div>
+      <p class="pricing-note">税抜・基本料その他の付帯費用なし</p>
+    </div>
+
+    <div class="closing">まずは、話を聞かせてください。</div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>事業計画書の作成 | 事業計画オフィスタカハシ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #ffffff;
+      --sidebar-bg: #f5f1ed;
+      --text: #222222;
+      --nav-text: #333333;
+      --nav-active: #222222;
+      --accent-line: #222222;
+      --sidebar-width: 160px;
+    }
+    body { font-family: 'Noto Sans JP', sans-serif; font-weight: 300; color: var(--text); background: var(--bg); min-height: 100vh; display: flex; }
+    .sidebar { width: var(--sidebar-width); min-height: 100vh; background: var(--sidebar-bg); position: fixed; top: 0; left: 0; display: flex; flex-direction: column; padding: 40px 0; }
+    .sidebar-logo { font-size: 11px; font-weight: 500; color: var(--nav-text); letter-spacing: 0.05em; line-height: 1.6; padding: 0 24px; margin-bottom: 56px; }
+    nav { display: flex; flex-direction: column; gap: 0; }
+    nav a { display: block; font-size: 13px; font-weight: 300; color: var(--nav-text); text-decoration: none; padding: 12px 24px; letter-spacing: 0.05em; line-height: 1.5; border-left: 2px solid transparent; transition: color 0.2s; }
+    nav a:hover { color: var(--nav-active); }
+    nav a.active { color: var(--nav-active); border-left: 2px solid var(--accent-line); font-weight: 400; }
+    .sidebar-footer { margin-top: auto; padding: 0 24px; display: flex; flex-direction: column; align-items: flex-end; }
+    .sidebar-footer .bpot-mark { font-size: 18px; font-weight: 500; letter-spacing: 0.12em; color: #555555; line-height: 1.2; }
+    .sidebar-footer .since { font-size: 9px; font-weight: 300; letter-spacing: 0.15em; color: #aaaaaa; margin-top: 2px; }
+    .main { margin-left: var(--sidebar-width); flex: 1; padding: 100px 80px 120px 80px; max-width: 760px; }
+    .page-title { font-size: 13px; font-weight: 400; color: #aaaaaa; letter-spacing: 0.1em; margin-bottom: 64px; }
+    .body-text { font-size: 17px; font-weight: 300; line-height: 2.4; color: var(--text); }
+    .body-text p { margin-bottom: 40px; }
+    .body-text p:last-child { margin-bottom: 0; }
+    .closing { margin-top: 96px; font-size: 22px; font-weight: 500; line-height: 2.0; color: var(--text); }
+    @media (max-width: 768px) { .sidebar { display: none; } .main { margin-left: 0; padding: 60px 32px 80px 32px; } }
+  </style>
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="sidebar-logo">事業計画オフィスタカハシ</div>
+    <nav>
+      <a href="index.html">トップページ</a>
+      <a href="consulting.html">経営のご相談</a>
+      <a href="business-plan.html" class="active">事業計画書の作成</a>
+      <a href="payroll.html">給与計算</a>
+      <a href="pricing.html">料金のご案内</a>
+      <a href="contact.html">お問い合わせ</a>
+    </nav>
+    <div class="sidebar-footer">
+      <span class="bpot-mark">BPOT</span>
+      <span class="since">since 2005</span>
+    </div>
+  </aside>
+  <main class="main">
+    <div class="page-title">事業計画書の作成</div>
+    <div class="body-text">
+      <p>事業計画書は、銀行提出のためだけにあるのではありません。</p>
+      <p>目指すべき目標を明確にする。<br>今の地点から、目的地まで、どう進むかを知る。<br>そのための道具です。</p>
+      <p>スローガンや社訓と決定的に違うのは、「数字」を使うことです。<br>数字は、曖昧さを排除します。<br>「コストを削減する」ではなく「20％削減する」と問いを立てたとき、<br>はじめてリアルな答えが導き出せます。</p>
+      <p>説得力ある事業計画書の条件は、会計知識でもマーケティング知識でもありません。<br>自分の事業を、深く、丁寧に掘り下げること。<br>数字ひとつひとつに責任を持ち、リアルが感じられること。</p>
+      <p>そして、今の状態を正しく把握することから始まります。<br>出発点の認識が間違っていれば、正しい道筋は測れません。</p>
+      <p>苦労して作った計画書が引き出しの肥やしになるのは、<br>その数字を、自分自身が心底信じられないからです。</p>
+      <p>経営者が深く関与して、実現の可能性を感じられるリアルな計画を練り上げたとき、<br>人は自然と、現実と計画を比較したくなります。<br>そこで初めて、計画書は生きた道具になります。</p>
+      <p>経営者自らの手で作ったと思えるような、そんな事業計画書づくりのお手伝いをします。</p>
+    </div>
+    <div class="closing">一緒に、作りましょう。</div>
+  </main>
+</body>
+</html>
